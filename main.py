@@ -38,7 +38,7 @@ async def fm(ctx):
     async for message in ctx.channel.history(oldest_first=True, limit=1):
         first_message = message
     if first_message:
-        await ctx.send(f"A primeira mensagem deste canal é: {first_message.jump_url}")
+        await ctx.send(f"A primeira mensagem deste canal é1: {first_message.jump_url}")
     else:
         await ctx.send("Não foi possível encontrar a primeira mensagem.")
 
